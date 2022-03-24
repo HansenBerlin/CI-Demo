@@ -6,3 +6,5 @@ public interface IPayment
     int FromAccountId { get; set; }
     double Amount { get; set; }
 }
+
+//test
