@@ -23,8 +23,12 @@
       <change beforePath="$PROJECT_DIR$/PaymentApi.UnitTests/obj/PaymentApi.UnitTests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentApi.UnitTests/obj/PaymentApi.UnitTests.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PaymentApi.UnitTests/obj/PaymentApi.UnitTests.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentApi.UnitTests/obj/PaymentApi.UnitTests.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PaymentApi.UnitTests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentApi.UnitTests/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaymentApi/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentApi/obj/staticwebassets.pack.sentinel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaymentEndToEndTests/LoginFakeTst.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentEndToEndTests/LoginFakeTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentApi.UnitTests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentApi.UnitTests/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentApi/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentApi/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentApi/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentConsoleClient.UnitTests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentConsoleClient.UnitTests/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentEndToEndTests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentEndToEndTests/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentWebClient.UiComponentTests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentWebClient.UiComponentTests/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +96,7 @@
     <property name="ts.external.directory.path" value="C:\Users\Hannes\AppData\Local\JetBrains\Toolbox\apps\Rider\ch-0\213.6775.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.Api">
+  <component name="RunManager" selected=".NET Launch Settings Profile.WebClient">
     <configuration name="ConsoleClient" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/PaymentConsoleClient/bin/Debug/net6.0/PaymentConsoleClient.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -268,7 +272,7 @@
       <workItem from="1647500862814" duration="126849000" />
       <workItem from="1647969413129" duration="19971000" />
       <workItem from="1648044032192" duration="22763000" />
-      <workItem from="1648081226647" duration="16293000" />
+      <workItem from="1648081226647" duration="18114000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1646926987951</created>
@@ -606,7 +610,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648116738498</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="c">
+      <created>1648117741750</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1648117741750</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
