@@ -12,5 +12,4 @@ public static class ApiStrings
     public const string AddNewSavingsAccount = "SavingsAccount/newaccount";
     public const string CheckAccountAvailabilityById = "SavingsAccount/accountbyid";
     public const string CheckAccountAvailabilityByUser = "SavingsAccount/accountbyuser";
-
 }
