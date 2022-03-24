@@ -16,6 +16,8 @@ public class LoginFakeTest
             {
                 Headless = false,
                 SlowMo = 2000,
+                Args = new[] { "--disable-dev-shm-usage" }
+
             });
         var context = await browser.NewContextAsync();
         var page = await context.NewPageAsync();
