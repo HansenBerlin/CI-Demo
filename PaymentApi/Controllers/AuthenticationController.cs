@@ -89,5 +89,3 @@ public class AuthenticationController : ControllerBase
         return Convert.ToBase64String(sham.ComputeHash(data));
     }
 }
-
-// test
