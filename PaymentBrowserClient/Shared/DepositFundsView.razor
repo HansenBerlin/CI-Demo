@@ -1,0 +1,28 @@
+﻿@using Microsoft.AspNetCore.Components
+@using PaymentCore.Emuns
+@using PaymentCore.Entities
+@using PaymentCore.Interfaces
+@using PaymentCore.UseCases
+
+<PopupDialog @ref="@_dialog" Header="Deposit Info"/>
+<MudGrid>
+    <MudItem sm="7">
+        <EditForm Model="@_paymentModel">
+            <DataAnnotationsValidator/>
+            <MudCard Style="min-height: 300px; height: 300px">
+                <MudCardContent>
+                    <MudNumericField @bind-Value="_paymentModel.Amount" For="@(() => _paymentModel.Amount)" Label="Amount to deposit" Format="F1" Variant="Variant.Text" Min="0" HideSpinButtons="true"/>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto" OnClick="DepositFundsClick">Deposit</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </EditForm>
+    </MudItem>
+    <MudItem sm="5">
+        @if (SessionService.User.AuthState == AuthenticationState.LoggedIn)
+        {
+            <SavingsAccountView @ref="_savingsAccountView"/>
+        }
+    </MudItem>
+</MudGrid>

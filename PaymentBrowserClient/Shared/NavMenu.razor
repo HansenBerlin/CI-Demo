@@ -1,0 +1,16 @@
+﻿@using PaymentCore.Emuns
+@using PaymentWebClient.Models
+@inject ISessionService _sessionService;
+
+<MudNavMenu>
+    <MudNavLink Href="" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.ManageAccounts">User Account</MudNavLink>
+    @if (_sessionService.User.AuthState == AuthenticationState.LoggedIn)
+    {
+        <MudNavLink Href="/account" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Money">Savings Account</MudNavLink>
+    }
+</MudNavMenu>
+
+@code
+{
+    
+}

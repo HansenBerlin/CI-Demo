@@ -1,0 +1,22 @@
+﻿@using Microsoft.AspNetCore.Components
+@using PaymentCore.Emuns
+
+<PopupDialog @ref="@_popup" Header="Login State"/>
+<EditForm Model="@_model">
+     <DataAnnotationsValidator/>
+     <MudGrid>
+         <MudItem sm="12">
+             <MudCard Style="min-height: 300px; height: 300px">
+                 <MudCardContent>
+                     <MudTextField Label="Username" HelperText="Upper and lower case will be ignored during login"
+                                   @bind-Value="_model.Username" For="@(() => _model.Username)"/>
+                     <MudTextField Label="Password" HelperText="Type in your password" Class="mt-3"
+                                   @bind-Value="_model.Password" For="@(() => _model.Password)" InputType="InputType.Password"/>
+                 </MudCardContent>
+                 <MudCardActions>
+                     <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto" OnClick="LoginButtonClick">Login</MudButton>
+                 </MudCardActions>
+             </MudCard>
+         </MudItem>
+     </MudGrid>
+ </EditForm>

@@ -1,0 +1,54 @@
+﻿@using Microsoft.AspNetCore.Components
+@using PaymentCore.Emuns
+@using PaymentCore.Entities
+@using PaymentCore.Interfaces
+@using PaymentCore.UseCases
+@using PaymentWebClient.Models
+@inject ISessionService _sessionService
+@inject ISavingsAccountInteractor _savingsAccountInteractor;
+
+<PopupDialog @ref="@_dialog" Header="Payment Info"/>
+<MudGrid>
+    <MudItem sm="7">
+        <EditForm Model="@_paymentModel">
+            <DataAnnotationsValidator/>
+            <MudCard Style="min-height: 300px; height: 300px">
+                <MudCardContent>
+                    <MudNumericField @bind-Value="_paymentModel.Amount" For="@(() => _paymentModel.Amount)" Label="Amount to send" Format="F1" Variant="Variant.Text" Min="0" HideSpinButtons="true"/>
+                    <MudNumericField @bind-Value="_paymentModel.ToAccountId" For="@(() => _paymentModel.ToAccountId)" Label="Send to account id" Variant="Variant.Text" Min="0" HideSpinButtons="true"/>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton ButtonType="ButtonType.Button" Variant="Variant.Outlined" Color="Color.Primary" OnClick="ValidateReceiverAccountClick">Validate Receiver</MudButton>
+                    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" OnClick="SendFundsClick">Send</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </EditForm>
+    </MudItem>
+    <MudItem sm="5" Style="min-height: 500px; height: 500px">
+        @if (_sessionService.User.AuthState == AuthenticationState.LoggedIn)
+        {
+            <SavingsAccountView @ref="_savingsAccountView" />
+        }
+    </MudItem>
+</MudGrid>
+
+@code 
+{
+    private readonly IPayment _paymentModel = new PaymentEntity();
+    private PopupDialog _dialog;
+    private SavingsAccountView _savingsAccountView;
+
+    private async Task SendFundsClick()
+    {
+        _paymentModel.FromAccountId = _sessionService.User.UserSavingsAccount.Id;
+        PaymentState state = await _savingsAccountInteractor.MakePayment(_paymentModel, _sessionService.User.UserSavingsAccount);
+        await _savingsAccountView.UpdateData();
+        _dialog.Show($"Payment processed with state: {state.ToString()}");
+    }
+    
+    private async Task ValidateReceiverAccountClick()
+    {
+        bool isAccountAvailable = await _savingsAccountInteractor.IsAccountAvailable(_paymentModel.ToAccountId);
+        _dialog.Show($"Account with Id {_paymentModel.ToAccountId} is available: {isAccountAvailable}");
+    }
+}

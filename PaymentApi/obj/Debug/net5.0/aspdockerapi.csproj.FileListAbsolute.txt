@@ -1,0 +1,7 @@
+C:\Users\Hannes\RiderProjects\AuthServiceApi\aspdockerapi\obj\Debug\net5.0\aspdockerapi.csproj.AssemblyReference.cache
+C:\Users\Hannes\RiderProjects\AuthServiceApi\aspdockerapi\obj\Debug\net5.0\aspdockerapi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hannes\RiderProjects\AuthServiceApi\aspdockerapi\obj\Debug\net5.0\aspdockerapi.AssemblyInfoInputs.cache
+C:\Users\Hannes\RiderProjects\AuthServiceApi\aspdockerapi\obj\Debug\net5.0\aspdockerapi.AssemblyInfo.cs
+C:\Users\Hannes\RiderProjects\AuthServiceApi\aspdockerapi\obj\Debug\net5.0\aspdockerapi.csproj.CoreCompileInputs.cache
+C:\Users\Hannes\RiderProjects\AuthServiceApi\aspdockerapi\obj\Debug\net5.0\aspdockerapi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Hannes\RiderProjects\AuthServiceApi\aspdockerapi\obj\Debug\net5.0\aspdockerapi.MvcApplicationPartsAssemblyInfo.cache

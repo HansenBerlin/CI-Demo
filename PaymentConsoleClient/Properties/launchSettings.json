@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "PaymentConsoleClient": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  },
+  "console": "integratedTerminal"
+}

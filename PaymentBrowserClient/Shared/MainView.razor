@@ -1,0 +1,27 @@
+﻿@using PaymentCore.Emuns
+@using PaymentCore.Entities
+@using PaymentCore.Interfaces
+@using PaymentCore.UseCases
+@using PaymentWebClient.Models
+@using Microsoft.AspNetCore.Components
+
+
+<MudText Align="Align.Center" Typo="Typo.h1" Style="margin-bottom: 50px">Payment App</MudText>
+<MudTabs Rounded="true" Centered="true" Elevation="0" Outlined="true" @ref="_tabs" ApplyEffectsToContainer="true" PanelClass="pa-12">
+    <MudTabPanel Text="Login" Icon="@Icons.Material.Filled.Login" Disabled="@isAuthenticated">
+        <LoginView OnClickCallback="@LoginButtonClick"/>
+    </MudTabPanel>
+    <MudTabPanel Text="Register" Icon="@Icons.Material.Filled.AccountCircle" Disabled="@isAuthenticated">
+        <RegisterView OnClickCallback="@RegisterButtonClick"/>
+    </MudTabPanel>
+    <MudTabPanel Text="Send Funds" Icon="@Icons.Material.Filled.Send" Disabled="@(!isAuthenticated)">
+        <SendFundsView/>
+    </MudTabPanel>
+    <MudTabPanel Text="Deposit Funds" Icon="@Icons.Material.Filled.Money" Disabled="@(!isAuthenticated)">
+        <DepositFundsView/>
+    </MudTabPanel>
+    <MudTabPanel Text="Logout" Icon="@Icons.Material.Filled.Logout" Disabled="@(!isAuthenticated)">
+        <MudText>Logout @SessionService.User.Name</MudText>
+        <MudButton ButtonType="ButtonType.Button" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto" OnClick="Logout">Logout</MudButton>
+    </MudTabPanel>
+</MudTabs>

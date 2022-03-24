@@ -1,0 +1,39 @@
+﻿
+<MudDialog @bind-IsVisible="_visible" Options="_dialogOptions">
+    <TitleContent>
+        <MudText Typo="Typo.h6">
+            <MudIcon Icon="@Icons.Material.Filled.Info" Class="mr-3"/>@Header
+        </MudText>
+    </TitleContent>
+    <DialogContent>
+        <p>@_content</p>
+    </DialogContent>
+    <DialogActions>
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="Submit" Class="px-10">Close</MudButton>
+    </DialogActions>
+</MudDialog>
+
+@code 
+{
+    [Parameter]
+    public string Header { get; set; }
+    
+    private string _content = "";
+    private bool _visible;
+
+    public void Show(string content)
+    {
+        _content = content;
+        _visible = true;
+        StateHasChanged();
+    }
+    
+    public void Hide()
+    {
+        _visible = false;
+        StateHasChanged();
+    }
+    
+    private void Submit() => _visible = false;
+    private readonly DialogOptions _dialogOptions = new() { FullWidth = true };
+}

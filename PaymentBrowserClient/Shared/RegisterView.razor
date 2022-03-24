@@ -1,0 +1,34 @@
+﻿@using Microsoft.AspNetCore.Components
+@using PaymentWebClient.Models
+<EditForm Model="@_model">
+    <DataAnnotationsValidator/>
+    <MudGrid>
+        <MudItem sm="12">
+            <MudCard Style="min-height: 300px; height: 300px">
+                <MudCardContent>
+                    <MudTextField Label="Username" HelperText="Upper and lower case will be ignored"
+                                  @bind-Value="_model.Username" For="@(() => _model.Username)"/>
+                    <MudTextField Label="Password" HelperText="Choose a strong password" Class="mt-3"
+                                  @bind-Value="_model.Password" For="@(() => _model.Password)" InputType="InputType.Password"/>
+                    <MudTextField Label="Password" HelperText="Repeat the password" Class="mt-3"
+                                  @bind-Value="_model.Password2" For="@(() => _model.Password2)" InputType="InputType.Password"/>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto" OnClick="RegisterButtonClick">Register</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+    </MudGrid>
+</EditForm>
+
+@code 
+{
+    [Parameter]
+    public EventCallback<RegisterAccountForm> OnClickCallback { get; set; }
+    private readonly RegisterAccountForm _model = new();
+
+    private async Task RegisterButtonClick()
+    {
+        await OnClickCallback.InvokeAsync(_model);
+    }
+}
