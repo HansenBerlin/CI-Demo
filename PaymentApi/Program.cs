@@ -21,7 +21,7 @@ app.UseSwaggerUI();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseCors(policy => 
-    policy.WithOrigins("http://localhost:5000", "https://localhost:5001")
+    policy.WithOrigins("https://localhost:5000", "http://localhost:5001")
         .AllowAnyMethod()
         .WithHeaders(HeaderNames.ContentType));
 app.UseAuthorization();
