@@ -6,3 +6,5 @@ public interface ISqlService
 {
     MySqlConnection con { get; }
 }
+
+//test
