@@ -9,6 +9,10 @@
         <AssemblyName>PaymentWebClient.UiComponentTests</AssemblyName>
 
         <RootNamespace>PaymentWebClient.UiComponentTests</RootNamespace>
+
+        <Configurations>Debug;Release;ReleaseWebClient;ReleaseConsoleClient;ReleaseApi;ReleaseAll</Configurations>
+
+        <Platforms>AnyCPU</Platforms>
     </PropertyGroup>
 
     <ItemGroup>
