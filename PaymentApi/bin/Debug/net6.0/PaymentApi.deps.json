@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "paymentapi/1.0.0": {
+      "PaymentApi/1.0.0": {
         "dependencies": {
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.14.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.2",
@@ -15,7 +15,7 @@
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
-          "paymentapi.dll": {}
+          "PaymentApi.dll": {}
         }
       },
       "BouncyCastle.NetCore/1.8.5": {
@@ -2129,7 +2129,7 @@
     }
   },
   "libraries": {
-    "paymentapi/1.0.0": {
+    "PaymentApi/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

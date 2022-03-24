@@ -14,7 +14,7 @@ public class LoginTest
         await using var browser = await playwright.Chromium.LaunchAsync(
             new BrowserTypeLaunchOptions
             {
-                Headless = false,
+                Headless = true,
                 SlowMo = 2000
             });
 
