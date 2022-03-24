@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentApi", "PaymentApi\Pa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentApi.UnitTests", "PaymentApi.UnitTests\PaymentApi.UnitTests.csproj", "{94BA43BB-D6F9-4ED5-9AA8-3AA35710F7D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentApplication", "PaymentApplication\PaymentApplication.csproj", "{17B9AA72-1CBA-43A6-9354-7A38A8D23886}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentApplication", "PaymentApplication\PaymentApplication.csproj", "{A00489CC-5A73-44FD-99E4-DCA23331F617}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentWebClient", "PaymentBrowserClient\PaymentWebClient.csproj", "{F831A446-DD9F-41BC-870F-C32BF94BDF35}"
@@ -38,10 +36,6 @@ Global
 		{94BA43BB-D6F9-4ED5-9AA8-3AA35710F7D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94BA43BB-D6F9-4ED5-9AA8-3AA35710F7D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94BA43BB-D6F9-4ED5-9AA8-3AA35710F7D7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{17B9AA72-1CBA-43A6-9354-7A38A8D23886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{17B9AA72-1CBA-43A6-9354-7A38A8D23886}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{17B9AA72-1CBA-43A6-9354-7A38A8D23886}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{17B9AA72-1CBA-43A6-9354-7A38A8D23886}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A00489CC-5A73-44FD-99E4-DCA23331F617}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A00489CC-5A73-44FD-99E4-DCA23331F617}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A00489CC-5A73-44FD-99E4-DCA23331F617}.Release|Any CPU.ActiveCfg = Release|Any CPU
