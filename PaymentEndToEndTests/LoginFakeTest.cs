@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using System.Threading.Tasks;
 using Xunit;
@@ -21,7 +22,14 @@ public class LoginFakeTest
             });
         var context = await browser.NewContextAsync();
         var page = await context.NewPageAsync();
-        await page.GotoAsync("http://localhost:5001/");
+        try
+        {
+            await page.GotoAsync("http://localhost:5000/");
+        }
+        catch (Exception e)
+        {
+            await page.GotoAsync("http://localhost:5001/");
+        }
         await File.WriteAllBytesAsync(Path.Combine(Directory.GetCurrentDirectory(), "loginTestInitialState2.png"),
             await page.ScreenshotAsync());
         await page.Locator("input[type=\"text\"]").ClickAsync();
