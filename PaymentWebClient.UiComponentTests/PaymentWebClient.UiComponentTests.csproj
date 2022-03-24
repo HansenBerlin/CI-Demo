@@ -10,7 +10,7 @@
 
         <RootNamespace>PaymentWebClient.UiComponentTests</RootNamespace>
 
-        <Configurations>Debug;Release;ReleaseWebClient;ReleaseConsoleClient;ReleaseApi;ReleaseAll</Configurations>
+        <Configurations>Debug;Release;ReleaseWebClient;ReleaseConsoleClient;ReleaseApi;ReleaseAll;EndToEndOnly</Configurations>
 
         <Platforms>AnyCPU</Platforms>
     </PropertyGroup>

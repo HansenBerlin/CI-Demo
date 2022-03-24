@@ -7,7 +7,7 @@
 		<DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
 		<DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
 		<UserSecretsId>151dce08-fa73-45d9-8dc1-17c0fc213e97</UserSecretsId>
-		<Configurations>Debug;Release;ReleaseWebClient;ReleaseConsoleClient;ReleaseApi;ReleaseAll</Configurations>
+		<Configurations>Debug;Release;ReleaseWebClient;ReleaseConsoleClient;ReleaseApi;ReleaseAll;EndToEndOnly</Configurations>
 		<Platforms>AnyCPU</Platforms>
 	</PropertyGroup>
 
