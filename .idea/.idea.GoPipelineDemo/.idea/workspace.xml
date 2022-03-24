@@ -19,6 +19,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="228a4d42-8fca-4a03-be90-afc7f42619a1" name="Changes" comment="c">
+      <change afterPath="$PROJECT_DIR$/PaymentEndToEndTests/LoginFakeTst.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GoPipelineDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GoPipelineDemo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PaymentEndToEndTests/LoginTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentEndToEndTests/LoginTest.cs" afterDir="false" />
     </list>
@@ -264,7 +265,7 @@
       <workItem from="1647500862814" duration="126849000" />
       <workItem from="1647969413129" duration="19971000" />
       <workItem from="1648044032192" duration="22763000" />
-      <workItem from="1648081226647" duration="14478000" />
+      <workItem from="1648081226647" duration="15488000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1646926987951</created>
@@ -588,7 +589,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648111975550</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="c">
+      <created>1648115908321</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1648115908321</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
