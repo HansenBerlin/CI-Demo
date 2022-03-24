@@ -11,12 +11,12 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("8ebdc364-b943-4294-8505-a6e4fabf9bec")]
-[assembly: System.Reflection.AssemblyCompanyAttribute("PaymentApi")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("paymentapi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("PaymentApi")]
-[assembly: System.Reflection.AssemblyTitleAttribute("PaymentApi")]
+[assembly: System.Reflection.AssemblyProductAttribute("paymentapi")]
+[assembly: System.Reflection.AssemblyTitleAttribute("paymentapi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Von der MSBuild WriteCodeFragment-Klasse generiert.

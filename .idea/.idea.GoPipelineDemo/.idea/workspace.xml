@@ -18,20 +18,16 @@
     <projectFile profileName="PaymentConsoleClient">PaymentConsoleClient/PaymentConsoleClient.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="228a4d42-8fca-4a03-be90-afc7f42619a1" name="Changes" comment="delete double project">
+    <list default="true" id="228a4d42-8fca-4a03-be90-afc7f42619a1" name="Changes" comment="add build configs">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GoPipelineDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GoPipelineDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GoPipelineDemo.sln" beforeDir="false" afterPath="$PROJECT_DIR$/GoPipelineDemo.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaymentApi.UnitTests/PaymentApi.UnitTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentApi.UnitTests/PaymentApi.UnitTests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaymentApi.UnitTests/obj/Debug/net6.0/PaymentApi.UnitTests.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentApi.UnitTests/obj/Debug/net6.0/PaymentApi.UnitTests.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaymentApi/PaymentApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentApi/PaymentApi.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentApi/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentApi/bin/Debug/net6.0/PaymentApi.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentApi/bin/Debug/net6.0/PaymentApi.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentApi/obj/Debug/net6.0/PaymentApi.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentApi/obj/Debug/net6.0/PaymentApi.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentApi/obj/Debug/net6.0/PaymentApi.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentApi/obj/Debug/net6.0/PaymentApi.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentApi/obj/Debug/net6.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentApi/obj/Debug/net6.0/staticwebassets.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentApi/obj/PaymentApi.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentApi/obj/PaymentApi.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentApi/obj/PaymentApi.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentApi/obj/PaymentApi.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PaymentApi/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentApi/obj/staticwebassets.pack.sentinel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaymentApplication/PaymentApplication.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentApplication/PaymentApplication.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaymentBrowserClient/PaymentWebClient.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentBrowserClient/PaymentWebClient.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaymentConsoleClient/PaymentConsoleClient.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentConsoleClient/PaymentConsoleClient.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaymentCore/PaymentCore.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentCore/PaymentCore.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaymentEndToEndTests/PaymentEndToEndTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentEndToEndTests/PaymentEndToEndTests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaymentInfrastructure/PaymentInfrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentInfrastructure/PaymentInfrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaymentWebClient.UiComponentTests/PaymentWebClient.UiComponentTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentWebClient.UiComponentTests/PaymentWebClient.UiComponentTests.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +270,7 @@
       <workItem from="1647500862814" duration="126849000" />
       <workItem from="1647969413129" duration="19971000" />
       <workItem from="1648044032192" duration="22763000" />
-      <workItem from="1648081226647" duration="2090000" />
+      <workItem from="1648081226647" duration="3737000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1646926987951</created>
@@ -570,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648082203504</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="add build configs">
+      <created>1648083543693</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1648083543693</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -645,7 +648,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="add version to projectfile" />
     <MESSAGE value="extract system tests project" />
     <MESSAGE value="add new projects" />
     <MESSAGE value="restructure project" />
@@ -670,7 +672,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="rebuild sln file" />
     <MESSAGE value="delete double project" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete double project" />
+    <MESSAGE value="add build configs" />
+    <option name="LAST_COMMIT_MESSAGE" value="add build configs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
