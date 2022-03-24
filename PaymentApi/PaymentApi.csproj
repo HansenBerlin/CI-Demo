@@ -6,7 +6,7 @@
     <LangVersion>10</LangVersion>
     <UserSecretsId>8ebdc364-b943-4294-8505-a6e4fabf9bec</UserSecretsId>
     <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
-    <Configurations>Debug;Release;ReleaseWebClient;ReleaseConsoleClient;ReleaseApi;ReleaseAll</Configurations>
+    <Configurations>Debug;Release;ReleaseWebClient;ReleaseConsoleClient;ReleaseApi;ReleaseAll;EndToEndOnly</Configurations>
     <Platforms>AnyCPU</Platforms>
   </PropertyGroup>
   <ItemGroup>

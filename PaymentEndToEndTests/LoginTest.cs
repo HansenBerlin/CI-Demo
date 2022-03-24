@@ -14,10 +14,10 @@ public class LoginTest
         await using var browser = await playwright.Chromium.LaunchAsync(
             new BrowserTypeLaunchOptions
             {
-                Headless = true,
-                SlowMo = 2000
+                Headless = false,
+                SlowMo = 2000,
+                Args = new[] { "--disable-dev-shm-usage" }
             });
-
         var context = await browser.NewContextAsync();
         var page = await context.NewPageAsync();
         await page.GotoAsync("http://localhost:5001/");

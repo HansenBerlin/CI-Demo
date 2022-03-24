@@ -51,7 +51,7 @@
             },
             "Microsoft.Playwright": {
               "target": "Package",
-              "version": "[1.20.1, )"
+              "version": "[1.20.2, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
