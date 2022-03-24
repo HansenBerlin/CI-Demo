@@ -10,6 +10,7 @@ public class LoginTest
     [Fact]
     public async Task LoginUser_ShouldLogin_WhenExisitingCredentialsAreProvided()
     {
+        var exitCode = Microsoft.Playwright.Program.Main(new[] { "install" });
         using var playwright = await Playwright.CreateAsync();
         await using var browser = await playwright.Chromium.LaunchAsync(
             new BrowserTypeLaunchOptions
@@ -21,6 +22,8 @@ public class LoginTest
         var context = await browser.NewContextAsync();
         var page = await context.NewPageAsync();
         await page.GotoAsync("http://localhost:5001/");
+        await File.WriteAllBytesAsync(Path.Combine(Directory.GetCurrentDirectory(), "loginTestInitialState.png"),
+            await page.ScreenshotAsync());
         await page.Locator("input[type=\"text\"]").ClickAsync();
         await page.Locator("input[type=\"text\"]").FillAsync("robert2");
         await page.Locator("input[type=\"text\"]").PressAsync("Tab");
